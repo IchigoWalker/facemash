@@ -1,0 +1,22 @@
+web1: #component type & number
+  name: facemash            #component settings
+  shared_writable_dirs:
+    - var/cache
+  document_root: app
+  php_version: 5.3.23
+  php_extensions:
+    - mysql
+    - gd
+    - eaccelerator
+     
+db1: #component type & number 
+  name: posts            #component settings
+  type: mysql
+   
+db2: #component type & number
+  name: subscribers       #component settings
+  type: mysql
+ 
+cache1:
+  name: sessions
+  type: memcached
